@@ -11,9 +11,9 @@ export default function Contact() {
     <form>
       <div className="p-10 space-y-12 sm:space-y-16">
         <div>
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Profile</h2>
+          <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Let's get in touch</h1>
           <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-600">
-            This information will be displayed publicly so be careful what you share.
+            Send me a message and I'll get back to you!
           </p>
         
           <div className="mt-10 space-y-8 border-b border-gray-900/10 pb-12 sm:space-y-0 sm:divide-y sm:divide-gray-900/10 sm:border-t sm:pb-0">
@@ -116,13 +116,13 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-6 flex items-center justify-end gap-x-6">
+      <div className="px-10 mt-6 flex items-center justify-end gap-x-6">
         <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
           Cancel
         </button>
         <button
           type="submit"
-          className="inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="inline-flex justify-center rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Save
         </button>
