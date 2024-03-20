@@ -10,7 +10,7 @@ A new portfolio built on React.
 
 ## Mock up
 
-[![developer portfolio screenshot of website](./src/assets/mockup.jpg)] 
+![developer portfolio screenshot of website](./src/assets/mockup.jpg) 
 
 ## License
 
