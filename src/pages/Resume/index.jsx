@@ -1,30 +1,30 @@
 const timeline = [
   {
-    name: "Founded company",
+    name: "Technical Account Manager | Hush Communications Canada",
     description:
-      "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.",
-    date: "Aug 2021",
-    dateTime: "2021-08",
+      "Championed customer success by leading the technical onboarding of over 15 new customers each month. Recognized with top sales awards for 9 consecutive months.",
+    date: "Apr 2019 - Current",
+    dateTime: "2019-04",
   },
   {
-    name: "Secured $65m in funding",
+    name: "Customer Support Manager | Argo Blockchain",
     description:
-      "Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.",
-    date: "Dec 2021",
+      "Collaborated closely with the executive management team to establish a culture of integrity and excellence.",
+    date: "Sept 2018 – February 2019",
     dateTime: "2021-12",
   },
   {
-    name: "Released beta",
+    name: "Owner/Event Producer | Brockton Point Productions",
     description:
-      "Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.",
-    date: "Feb 2022",
+      "Led the creation of immersive tech events with a focus on practical adoption of innovative tech, blockchain, and cybersecurity.",
+    date: "Jan 2017 – Dec 2018",
     dateTime: "2022-02",
   },
   {
-    name: "Global launch of product",
+    name: "Customer Success Representative | Tigerlead Solutions",
     description:
-      "Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.",
-    date: "Dec 2022",
+      "Provided proactive technical support to high-value customers, ensuring their success through periodic health checks and product training.",
+    date: "Jan 2015 – Sept 2017",
     dateTime: "2022-12",
   },
 ];
