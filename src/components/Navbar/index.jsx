@@ -66,7 +66,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto"
-                    src="\src\assets\ae logo.png"
+                    src="./src/assets/ae logo.png"
                     alt="logo of text AE with curly brackets on either side"
                   />
                 </div>
