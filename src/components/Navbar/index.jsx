@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, Link } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from 'react';
@@ -17,15 +17,14 @@ function classNames(...classes) {
 
 export default function Navbar() {
 
-    const [currentPage, setCurrentPage] = useState("Contact")
+    const [currentPage, setCurrentPage] = useState("contact")
 
     useEffect(() => {
-        const url = window.location.href.split("/");
-        const route = url[url.length -1];
+        const url = window.location.pathname;
+        const route = url.substring(1) || 'about'; // Default to 'about' if no path
 
-        setCurrentPage(route)
-
-    }, [])
+        setCurrentPage(route);
+      }, []);
 
   return (
     <Disclosure as="nav" className="bg-gray-900">
@@ -74,17 +73,18 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex items-center space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
+                      <Disclosure.Button key={item.name} as="div">
+                      <Link
+                        to={item.href}
                         className={classNames(
-                          item.name == currentPage ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          currentPage == item.name ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={currentPage === item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
+                      </Disclosure.Button>
                     ))}
                   </div>
                 </div>
