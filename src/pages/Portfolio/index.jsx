@@ -50,7 +50,7 @@ const blogPosts = [
   // More posts...
 ];
 
-export default function Example() {
+export default function Portfolio() {
   return (
     <div className="bg-white">
       <main className="isolate">
