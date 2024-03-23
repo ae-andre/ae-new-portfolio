@@ -1,43 +1,41 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useState, useEffect } from 'react';
-import assets from "../../assets.jsx"
-import { Link } from 'react-router-dom'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState, useEffect } from "react";
+import assets from "../../assets.jsx";
+import { Link, useLocation } from 'react-router-dom';
 
 const navigation = [
-  { name: 'about', href: '/' },
-  { name: 'portfolio', href: '/portfolio' },
-  { name: 'contact', href: '/contact' },
-  { name: 'resume', href: '/resume' },
-]
+  { name: "about", href: "/" },
+  { name: "portfolio", href: "/portfolio" },
+  { name: "contact", href: "/contact" },
+  { name: "resume", href: "/resume" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState("about");
 
-    const [currentPage, setCurrentPage] = useState("contact")
+  useEffect(() => {
 
-    useEffect(() => {
-        const url = window.location.pathname;
-        const route = url.substring(1) || 'about'; // Default to 'about' if no path
-
-        setCurrentPage(route);
-      }, []);
+    const route = location.pathname.substring(1) || 'about';
+    setCurrentPage(route);
+  }, [location.pathname]);
 
   return (
     <Disclosure as="nav" className="bg-gray-900">
       {({ open }) => (
         <>
           <div className="flex mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 justify-between">
+            <div className="flex h-16 justify-between items-center mt-2">
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <Menu as="div" className=" ml-3">
                   <div>
-                    <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                    </Menu.Button>
+                    <Menu.Button className="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"></Menu.Button>
                   </div>
                   <Transition
                     as={Fragment}
@@ -47,8 +45,7 @@ export default function Navbar() {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                  >
-                  </Transition>
+                  ></Transition>
                 </Menu>
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
@@ -63,10 +60,10 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-10 w-auto"
+                    className="flex items-center h-10 w-auto"
                     src={assets.logo}
                     alt="logo of text AE with curly brackets on either side"
                   />
@@ -74,18 +71,21 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex items-center space-x-4">
                     {navigation.map((item) => (
-                      <Disclosure.Button key={item.name} as="div">
                       <Link
+                        key={item.name}
                         to={item.href}
                         className={classNames(
-                          currentPage == item.name ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          currentPage === item.name
+                            ? "text-white"
+                            : "text-gray-400 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
                         )}
-                        aria-current={currentPage === item.current ? 'page' : undefined}
+                        aria-current={
+                          currentPage === item.name ? "page" : undefined
+                        }
                       >
                         {item.name}
                       </Link>
-                      </Disclosure.Button>
                     ))}
                   </div>
                 </div>
@@ -101,10 +101,12 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -114,5 +116,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
