@@ -1,7 +1,10 @@
+import assets from "../../assets.jsx";
+
 const blogPosts = [
   {
     id: 1,
-    title: "Hungry Mikey // An interactive game for children ages 2-6 that helps them to learn about nutritional values.",
+    title:
+      "Hungry Mikey // An interactive game for children ages 2-6 that helps them to learn about nutritional values.",
     href: "https://hungry-hungry-mikey-f614bbce79a1.herokuapp.com/",
     description:
       "An interactive game for children ages 2-6 that helps them to learn about nutritional values.",
@@ -11,29 +14,28 @@ const blogPosts = [
     datetime: "2020-11-16",
     author: {
       name: "Andre Endique",
-      imageUrl:
-        "https://avatars.githubusercontent.com/u/85869787?v=4",
+      imageUrl: "https://avatars.githubusercontent.com/u/85869787?v=4",
     },
   },
   {
     id: 2,
-    title: "Kumamo // An easy-to-use application that will choose your meal for you",
+    title:
+      "Kumamo // An easy-to-use application that will choose your meal for you",
     href: "https://ae-andre.github.io/kumamo_food_inspiration/",
     description:
       "An easy-to-use application that will choose your meal for you",
-    imageUrl:
-      "https://private-user-images.githubusercontent.com/130778807/284217939-8eac9ac2-1876-4d98-8fa7-d6d98ecd377e.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5NjQ3MzgsIm5iZiI6MTcxMDk2NDQzOCwicGF0aCI6Ii8xMzA3Nzg4MDcvMjg0MjE3OTM5LThlYWM5YWMyLTE4NzYtNGQ5OC04ZmE3LWQ2ZDk4ZWNkMzc3ZS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQxOTUzNThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMTJiZDNiZTdkNjI2MzljNmZiNGY2YWYyNTIxYjFmZWIxMTJiNGJlNGFlYTUwNDZlM2Y5NTBjOGU5MDBmOWIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fhqanX6rQ1urGsAbRnWpA7eBijPxlZSflzldy6L9zwY",
+    imageUrl: assets.kumamo,
     date: "Aug 16, 2023",
     datetime: "2023-07-16",
     author: {
-        name: "Andre Endique",
-        imageUrl:
-          "https://avatars.githubusercontent.com/u/85869787?v=4",
+      name: "Andre Endique",
+      imageUrl: "https://avatars.githubusercontent.com/u/85869787?v=4",
     },
   },
   {
     id: 3,
-    title: "Zoocial Network API // An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+    title:
+      "Zoocial Network API // An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
     href: "https://github.com/ae-andre/zoocial-network-api?tab=readme-ov-file",
     description:
       "Zoocial Network API // An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
@@ -42,9 +44,8 @@ const blogPosts = [
     date: "Mar 16, 2024",
     datetime: "2024-03-16",
     author: {
-        name: "Andre Endique",
-        imageUrl:
-          "https://avatars.githubusercontent.com/u/85869787?v=4",
+      name: "Andre Endique",
+      imageUrl: "https://avatars.githubusercontent.com/u/85869787?v=4",
     },
   },
   // More posts...
