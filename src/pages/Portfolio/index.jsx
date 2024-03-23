@@ -24,7 +24,7 @@ const blogPosts = [
     href: "https://ae-andre.github.io/kumamo_food_inspiration/",
     description:
       "An easy-to-use application that will choose your meal for you",
-    imageUrl: assets.kumamo,
+    imageUrl: assets.kumamoGif,
     date: "Aug 16, 2023",
     datetime: "2023-07-16",
     author: {
