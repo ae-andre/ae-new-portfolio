@@ -44,7 +44,7 @@ export default function Resume() {
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
                 Resume{" "}
               </h1>
-              <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+              <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1">
                 <p className="text-lg leading-8 text-gray-600">
                   Download my{" "}
                   <a

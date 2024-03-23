@@ -1,8 +1,9 @@
-import { Fragment, Link } from 'react'
+import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from 'react';
 import assets from "../../assets.jsx"
+import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'about', href: '/' },

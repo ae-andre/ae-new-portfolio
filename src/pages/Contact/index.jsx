@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="p-10 space-y-12 sm:space-y-16">
         <div>
           <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Let's get in touch</h1>
-          <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-600">
+          <p className="mt-5 max-w-2xl text-med leading-6 text-gray-600">
             Send me a message and I'll get back to you!
           </p>
         
