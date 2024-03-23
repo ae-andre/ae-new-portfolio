@@ -23,7 +23,7 @@ export default function About() {
                 </p>
               </div>
               <img
-                src="../src/assets/about me image.jpg"
+                src="../assets/about me image.jpg"
                 alt="photo of man outdoors at sunset"
                 className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
               />
