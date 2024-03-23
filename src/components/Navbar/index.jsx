@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import assets from "../../assets.jsx"
 
 const navigation = [
   { name: 'about', href: '/' },
@@ -66,7 +67,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto"
-                    src="./src/assets/ae logo.png"
+                    src={assets.}
                     alt="logo of text AE with curly brackets on either side"
                   />
                 </div>
